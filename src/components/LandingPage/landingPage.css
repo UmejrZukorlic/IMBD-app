@@ -1,0 +1,30 @@
+#root {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(12, 75, 89, 1) 100%
+  );
+}
+.landingPageSection {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: white;
+}
+.landingPageSection .movieCard {
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgb(64, 71, 106);
+  margin: 10px 0;
+}
+.landingPageSection .movieCard img {
+  height: 50vh;
+}
