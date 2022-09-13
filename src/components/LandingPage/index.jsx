@@ -3,12 +3,13 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./landingPage.css";
 import { useContext } from "react";
-import { NewsContext } from "../context";
+import { MovieContext } from "../context";
+import { Link } from "react-router-dom";
 const LandingPage = () => {
   const [data, setData] = useState();
   const [broj, setBroj] = useState(1);
 
-  const { identity, setIdentity } = useContext(NewsContext);
+  const { identity, setIdentity } = useContext(MovieContext);
 
   useEffect(() => {
     axios
@@ -29,13 +30,14 @@ const LandingPage = () => {
             <h3>Relase year: {el.year}</h3>
             <h3>Rank: {el.rank}.</h3>
             <p>Rating: {el.imDbRating}</p>
-            <button
-              onClick={() => {
-                setIdentity(el.id);
-                console.log(identity);
-              }}>
-              See more
-            </button>
+            <Link to="/titlePage">
+              <button
+                onClick={() => {
+                  setIdentity(el.id);
+                }}>
+                See more
+              </button>
+            </Link>
           </div>
         );
       })}

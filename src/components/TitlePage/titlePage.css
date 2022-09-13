@@ -1,0 +1,14 @@
+.TitlePageSection {
+  height: max-content;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.TitlePageSection img {
+  width: 50%;
+  height: 70%;
+}
