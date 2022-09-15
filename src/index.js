@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Context from "./components/context";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import TitlePage from "./components/TitlePage";
+import { NotFoundTitle } from "./components/NotFoundPage/index.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +15,8 @@ root.render(
       <Context>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/titlePage" element={<TitlePage />} />
+          <Route path="*" element={<NotFoundTitle />} />
         </Routes>
       </Context>
     </BrowserRouter>
