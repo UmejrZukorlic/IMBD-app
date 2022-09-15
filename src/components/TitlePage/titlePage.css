@@ -12,3 +12,56 @@
   width: 50%;
   height: 70%;
 }
+.TitlePageSection .actorsSection {
+  width: 90%;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.TitlePageSection .actorsSection .actorCard {
+  width: 49%;
+  aspect-ratio: 2/1.2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid white;
+}
+
+.TitlePageSection .actorsSection .actorCard img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+.TitlePageSection .similarsTitles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.TitlePageSection .similarsTitles .headerForSimilarsTitle {
+  font-size: larger;
+}
+.TitlePageSection .similarsTitles .titlesSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.TitlePageSection .similarsTitles .titlesSection .similarTitleCard {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.TitlePageSection .similarsTitles .titlesSection .similarTitleCard img {
+  width: 100%;
+  height: 70%;
+}
+.TitlePageSection .similarsTitles .titlesSection .similarTitleCard button {
+  width: 100%;
+  font-size: larger;
+  background-color: blue;
+  color: white;
+  border: 1px solid navy;
+}

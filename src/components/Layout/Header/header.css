@@ -1,0 +1,22 @@
+.headerSection {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+.headerSection .headerLogo {
+  color: white;
+}
+.headerSection .headerInput {
+  width: 50%;
+}
+
+.headerSection .filmOrMovie {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
