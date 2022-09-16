@@ -7,6 +7,8 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import TitlePage from "./components/TitlePage";
 import { NotFoundTitle } from "./components/NotFoundPage/index.jsx";
+import MoviePage from "./components/MoviePage";
+import TVsPage from "./components/TVsPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +19,8 @@ root.render(
           <Route path="/" element={<LandingPage />} />
           <Route path="/titlePage" element={<TitlePage />} />
           <Route path="*" element={<NotFoundTitle />} />
+          <Route path="/movies" element={<MoviePage />} />
+          <Route path="/tvs" element={<TVsPage />} />
         </Routes>
       </Context>
     </BrowserRouter>

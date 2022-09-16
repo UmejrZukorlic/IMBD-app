@@ -10,6 +10,11 @@
 .headerSection .headerLogo {
   color: white;
 }
+.headerSection .headerLogo .logoLogo {
+  text-decoration: none;
+  color: white;
+}
+
 .headerSection .headerInput {
   width: 50%;
 }
@@ -19,4 +24,19 @@
   display: flex;
   justify-content: space-between;
   color: white;
+}
+.headerSection .filmOrMovie .movieLink {
+  text-decoration: none;
+  color: white;
+}
+.headerSection .filmOrMovie .movieLink:visited {
+  color: green;
+}
+
+.headerSection .filmOrMovie .tvsLink {
+  text-decoration: none;
+  color: white;
+}
+.headerSection .filmOrMovie .tvsLink:visited {
+  color: green;
 }

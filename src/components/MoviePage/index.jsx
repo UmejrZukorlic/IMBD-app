@@ -1,29 +1,26 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./landingPage.css";
+import Layout from "../Layout";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { MovieContext } from "../context";
-import { Link } from "react-router-dom";
-import Layout from "../Layout";
-const LandingPage = () => {
+import "./moviePage.css";
+const MoviePage = () => {
   const [data, setData] = useState();
   const [broj] = useState(1);
 
-  const { setIdentity } = useContext(MovieContext);
-
   useEffect(() => {
     axios
-      .get("https://imdb-api.com/en/API/Top250Movies/k_1p4c9h6h")
+      .get("https://imdb-api.com/en/API/MostPopularMovies/k_1p4c9h6h")
       .then((respone) => {
         console.log(respone.data);
         setData(respone.data.items);
       });
   }, [broj]);
-
+  const { setIdentity } = useContext(MovieContext);
   return (
     <Layout>
-      <div className="landingPageSection">
+      <div className="MoviePageSection">
         {data?.map((el, i) => {
           return (
             <div key={el.id} className="movieCard">
@@ -48,4 +45,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default MoviePage;

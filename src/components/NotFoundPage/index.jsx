@@ -6,6 +6,7 @@ import {
   Container,
   Group,
 } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -64,9 +65,11 @@ export function NotFoundTitle() {
         address, or the page has been moved to another URL.
       </Text>
       <Group position="center">
-        <Button variant="subtle" size="md">
-          Take me back to home page
-        </Button>
+        <Link to="/">
+          <Button variant="subtle" size="md">
+            Take me back to home page
+          </Button>
+        </Link>
       </Group>
     </Container>
   );
