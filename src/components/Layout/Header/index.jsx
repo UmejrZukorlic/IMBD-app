@@ -1,19 +1,15 @@
 import React from "react";
 import "./header.css";
-import {
-  TextInput,
-  TextInputProps,
-  ActionIcon,
-  useMantineTheme,
-} from "@mantine/core";
+import { TextInput, ActionIcon, useMantineTheme } from "@mantine/core";
 import { IconSearch, IconArrowRight, IconArrowLeft } from "@tabler/icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { MovieContext } from "../../context";
 
 const Header = (props) => {
   const { inputTitle, setInputTitle, setTitleName } = useContext(MovieContext);
   const theme = useMantineTheme();
+  const navigate = useNavigate();
   return (
     <div className="headerSection">
       <div className="headerLogo">
@@ -37,6 +33,7 @@ const Header = (props) => {
               variant="filled"
               onClick={() => {
                 setTitleName(inputTitle);
+                navigate("/searched");
               }}>
               {theme.dir === "ltr" ? (
                 <IconArrowRight size={18} stroke={1.5} />
