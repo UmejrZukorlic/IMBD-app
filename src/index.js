@@ -9,6 +9,7 @@ import TitlePage from "./components/TitlePage";
 import { NotFoundTitle } from "./components/NotFoundPage/index.jsx";
 import MoviePage from "./components/MoviePage";
 import TVsPage from "./components/TVsPage";
+import SearchPage from "./components/SearchPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +22,7 @@ root.render(
           <Route path="*" element={<NotFoundTitle />} />
           <Route path="/movies" element={<MoviePage />} />
           <Route path="/tvs" element={<TVsPage />} />
+          <Route path="/searched" element={<SearchPage />} />
         </Routes>
       </Context>
     </BrowserRouter>

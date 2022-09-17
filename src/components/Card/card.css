@@ -1,12 +1,4 @@
-.tvPageSection {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  color: white;
-}
-.tvPageSection .movieCard {
+.movieCard {
   width: 30%;
   height: fit-content;
   display: flex;
@@ -16,13 +8,24 @@
   box-shadow: 10px 10px 10px rgb(64, 71, 106);
   margin: 10px 0;
 }
-.tvPageSection .movieCard img {
+.movieCard img {
   height: 50vh;
 }
-.tvPageSection .movieCard button {
+.movieCard button {
   width: 100%;
   font-size: larger;
   background-color: blue;
   color: white;
   border: 1px solid navy;
+}
+@media screen and(max-width:600px) {
+  .movieCard {
+    width: 85%;
+  }
+}
+
+@media screen and(max-width:800px) {
+  .movieCard {
+    width: 45%;
+  }
 }
