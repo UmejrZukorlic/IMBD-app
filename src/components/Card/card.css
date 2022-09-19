@@ -18,14 +18,14 @@
   color: white;
   border: 1px solid navy;
 }
-@media screen and(max-width:600px) {
+@media screen and (max-width: 600px) {
   .movieCard {
-    width: 85%;
+    width: auto;
   }
-}
-
-@media screen and(max-width:800px) {
-  .movieCard {
-    width: 45%;
+  .movieCard button {
+    height: 3rem;
+  }
+  .movieCard img {
+    width: 100%;
   }
 }

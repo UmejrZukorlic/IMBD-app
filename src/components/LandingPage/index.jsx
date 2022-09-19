@@ -33,7 +33,7 @@ const LandingPage = () => {
               year={el.year}
               rank={el.rank}
               imDbRating={el.imDbRating}
-              index={i}
+              key={i}
             />
           );
         })}
