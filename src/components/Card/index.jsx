@@ -8,7 +8,7 @@ const Card = (props) => {
   const { setIdentity } = useContext(MovieContext);
   const { id, image, title, year, rank, imDbRating, index } = props;
   return (
-    <div key={index} className="movieCard">
+    <div className="movieCard">
       <img src={image} alt="slika" />
       <h1>{title}</h1>
       <h3>Relase year: {year}</h3>
