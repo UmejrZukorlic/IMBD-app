@@ -65,3 +65,12 @@
   color: white;
   border: 1px solid navy;
 }
+
+@media screen and (max-width: 600px) {
+  .TitlePageSection .similarsTitles .titlesSection .similarTitleCard {
+    width: auto;
+  }
+  .TitlePageSection .actorsSection .actorCard {
+    width: auto;
+  }
+}
